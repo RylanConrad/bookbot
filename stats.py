@@ -13,9 +13,9 @@ def get_char_count(book):
     #print(char_list)
     for char in char_list:
         if char in char_dict:
-            print(char)
+            char_dict[char] += 1
         else:
-            char_dict.update(char)
+            char_dict[char] = 1
     
     print(char_dict)
 
